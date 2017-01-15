@@ -1,0 +1,27 @@
+{
+  "name": "auto-mailer-c",
+  "version": "1.0.0",
+  "description": "App that allows users to join onto a daily-mailing list and receive updates for a set number of days. A simple clone of Daily UI challenge site.",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "express": "^4.14.0",
+    "moment": "^2.17.1",
+    "mongoose": "^4.7.6",
+    "nodemailer": "^2.7.0",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "rewire": "^2.5.2",
+    "sinon": "^1.17.7",
+    "supertest": "^2.0.1"
+  }
+}

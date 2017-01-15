@@ -1,0 +1,20 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		link(rel='stylesheet' type='text/css' href='/public/styles.css')
+	body
+		
+		div.main
+			div.title-section
+				h1 DAILY UPDATES
+			
+			div.input-panel
+				input.email(type='text' placeholder='email')
+				div.button.join(data-method='POST' data-url='/record') join
+				div.button.quit(data-method='DELETE' data-url='/record') quit
+				div.button.suspend(data-method='PUT' data-url='/record/suspend') suspend
+				div.button.resume(data-method='PUT' data-url='/record/reactivate') resume
+		div#success.modal.hidden Success!
+		div#error.modal.hidden Error
+		script(src='/public/main.js')

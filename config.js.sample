@@ -1,0 +1,10 @@
+module.exports = {
+	SERVER_PORT: 3000,
+	DB_URL: 'mongodb://localhost/database',
+	TEST_DB_URL: 'mongodb://localhost/test',
+	START_WORKER: true,
+	WORKER_PERIOD: 5 * 60 * 1000, // 5 Minutes
+	GMAIL_USERNAME: 'joesmith123@gmail.com',
+	GMAIL_PASSWORD: 'password123',
+};
+

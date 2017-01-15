@@ -1,0 +1,143 @@
+/*
+ Colors
+ -------
+ Primary = #34a1fd
+ Primary-Highlight = #4df7ff
+ Secondary = #dfece2
+ Background = #fff
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Arial';
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #dfece2;
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
+}
+
+.processing:before {
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	color: #fff;
+	background-color: black;
+	opacity: 0.7;
+	z-index: 5;
+}
+
+.processing:after {
+	content: 'Processing...';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	color: #fff;
+	font-size: 40px;
+}
+
+.title-section {
+	width: 100%;
+	position: relative;
+	background-color: #34a1fd;
+	color: #fff;
+}
+
+.title-section h1 {
+	position: absolute;
+	font-size: 60px;
+	font-weight: 500;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.input-panel{
+	width: 100%;
+	padding: 5%;
+}
+
+.input-panel .button, .email {
+	width: 100%;
+	line-height: 50px;
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+.input-panel .email {
+	background-color: #fff;
+	color: #34a1fd;
+	border: none;
+	padding-left: 5px;
+}
+
+.input-panel .email:focus {
+	outline: none;
+}
+
+.input-panel .button {
+	background-color: #34a1fd;
+	color: #fff;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.input-panel .button:hover {
+	background-color: #4df7ff;
+}
+
+.input-panel :last-child {
+	margin-bottom: 0px;
+}
+	
+.modal {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+	text-align: center;
+	line-height: 150px;
+	font-size: 40px;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity .3s, visibility .3s;
+	box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#success {
+	background-color: green;
+	color: #fff;
+}
+
+#error {
+	background-color: red;
+	color: #fff;
+}
+	
